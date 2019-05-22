@@ -1,0 +1,164 @@
+@import "fonts";
+@import "vars";
+@import "libs";
+
+::placeholder {
+	color: #000;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+* {
+	font-family: $default-font;
+}
+
+body {
+	font-size: 15px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.5;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	letter-spacing: 1px;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.head {
+	&__top {
+		background: $accent;
+		padding: 20px 0;
+	}
+	&__topMenu {
+		text-align: right;
+		nav {
+			display: inline-block;
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			display: inline-block;
+			li {
+				display: inline-block;
+				margin-left: 30px;
+				&:first-of-type {
+					margin-left: 0;
+				}
+				a {
+					color: $gray;
+					font-size: 13px;
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+		button {
+			display: inline-block;
+			background: 0;
+			padding: 0;
+			border: 0;
+			margin-left: 30px;
+			color: $gray;
+			&:hover {
+				cursor: pointer;
+				color: #fff;
+			}
+		}
+	}
+	&__midMenu {
+		margin-top: 20px;
+		nav {
+			display: inline-block;
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			display: inline-block;
+			li {
+				display: inline-block;
+				margin-left: 30px;
+				&:first-of-type {
+					margin-left: 0;
+				}
+				a {
+					color: #fff;
+					&:hover {
+						color: $gray;
+					}
+				}
+			}
+		}
+	}
+	&__bot {
+		border-bottom: 1px solid #d5d5d5;
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			text-transform: uppercase;
+			li {
+				display: inline-block;
+				margin-right: 30px;
+				a {
+					height: 60px;
+					line-height: 60px;
+					color: $gray;
+					&:hover {
+						color: #000;
+					}
+				}
+			}
+			li.current {
+				a {
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+@import "media"; // Always at the end

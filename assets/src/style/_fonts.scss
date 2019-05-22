@@ -1,0 +1,51 @@
+/* Normal */
+
+@font-face {
+    font-family: "MazdaTypeCyrillic";
+    src: url("../fonts/MazdaTypeCyrillic-Regular.otf");
+    src: url("../fonts/InterstateMazda-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "MazdaTypeCyrillic";
+    src: url("../fonts/MazdaTypeCyrillic-Italic.otf");
+    src: url("../fonts/InterstateMazda-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Medium */
+
+@font-face {
+    font-family: "MazdaTypeCyrillic";
+    src: url("../fonts/MazdaTypeCyrillic-Medium.otf");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "MazdaTypeCyrillic";
+    src: url("../fonts/MazdaTypeCyrillic-MediumItalic.otf");
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: "MazdaTypeCyrillic";
+    src: url("../fonts/MazdaTypeCyrillic-Bold.otf");
+    src: url("../fonts/InterstateMazda-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "MazdaTypeCyrillic";
+    src: url("../fonts/MazdaTypeCyrillic-BoldItalic.otf");
+    src: url("../fonts/InterstateMazda-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 600;
+}
